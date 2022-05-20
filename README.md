@@ -9,9 +9,13 @@ Stack Up is a simple deployment tool that performs given set of commands on mult
 
 *Note: Demo is based on [this example Supfile](./example/Supfile).*
 
+# Prerequisite
+
+    $ go 1.16
+
 # Installation
 
-    $ go get -u github.com/pressly/sup/cmd/sup
+    $ GO111MODULE=off go get -u github.com/deploy-alphanonce/sup/cmd/sup
 
 # Usage
 
