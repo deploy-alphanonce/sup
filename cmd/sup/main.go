@@ -204,6 +204,8 @@ func parseArgs(conf *sup.Supfile) (*sup.Network, []*sup.Command, error) {
 			return nil, nil, fmt.Errorf("%v: %v", ErrCmd, cmd)
 		}
 	}
+	
+	network.Env.Set("SUP_COMMAND", strings.Join(args[1:], ","))
 
 	return &network, commands, nil
 }
