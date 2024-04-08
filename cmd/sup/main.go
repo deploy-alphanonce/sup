@@ -12,9 +12,9 @@ import (
 	"text/tabwriter"
 	"time"
 
+	"github.com/deploy-alphanonce/sup"
 	"github.com/mikkeloscar/sshconfig"
 	"github.com/pkg/errors"
-	"github.com/pressly/sup"
 )
 
 var (
@@ -204,7 +204,7 @@ func parseArgs(conf *sup.Supfile) (*sup.Network, []*sup.Command, error) {
 			return nil, nil, fmt.Errorf("%v: %v", ErrCmd, cmd)
 		}
 	}
-	
+
 	network.Env.Set("SUP_COMMAND", strings.Join(args[1:], ","))
 
 	return &network, commands, nil

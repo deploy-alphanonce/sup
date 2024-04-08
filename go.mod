@@ -1,4 +1,4 @@
-module github.com/pressly/sup
+module github.com/deploy-alphanonce/sup
 
 go 1.13
 
