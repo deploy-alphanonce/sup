@@ -11,11 +11,10 @@ Stack Up is a simple deployment tool that performs given set of commands on mult
 
 # Prerequisite
 
-    $ go 1.16
 
 # Installation
 
-    $ GO111MODULE=off go get -u github.com/deploy-alphanonce/sup/cmd/sup
+    $ go install github.com/deploy-alphanonce/sup/cmd/sup@latest
 
 # Usage
 
